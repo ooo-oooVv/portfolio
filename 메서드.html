@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    addClass(클래스명) -> 선택자에 클래스 삽입
+    removeClass() 모든 클래스 삭제 
+    removeClass('act') act 클래스만 삭제.
+    removeClass('act, on') act와 on 클래스 모두 삭제
+
+    toggleClas('on') on 클래스가 없으면 삽입, 삽입되어있으면 삭제. 
+        -> ex: 영상 stop/play 버튼// 햄버거 버튼// 로그인/ 로그아웃 버튼
+        객체는 하나인데, 두 개의 반대기능을 가졌다. (= 토글기능.)
+
+    //////////프로그래밍 최적화///////////////
+
+    each 메서드: 다중실행코드로 몰아서 한번에 처리하기 (객체구분은 $(this)로 한다.)
+        -> this: 실행중인 그 객체. 선택자가 느구냐에 따라 달라진다.
+
+    자바스크립트란? html 태그한테 이벤트 명령내리는 언어. (사라지고, 나타나고)
+
+    제이쿼리란? 이벤트에 피드백 처리하는 기능.(이벤트, 선택자, 메서드)
+        -> 태그(선택자)와 스타일시트(=메서드. addClass, removeClss, toggleClass, css메서드).
+        -> [DOM=태그=선택자] 조작하는 능력. (이벤트에 대한 주도권은 js에 있음)
+
+    ///////////////////////
+    웹은 html. css, js
+    js입장에서 html은 선택자, css메서드로 씀. js는 이벤트 소유권을 가졌다. 이벤트 시점을 지시하는게js
+</body>
+</html>

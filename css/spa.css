@@ -1,0 +1,33 @@
+li{
+    list-style-type: none;
+}
+
+main > section{
+    height: calc(100vh - 200px);
+}
+/* 닫기로 노출되면 그 아래 네비게이션을 아래 스타일로 적용해라. */
+
+#gnb{
+    text-transform: uppercase;
+}
+.xi-close + ul{ /*+의 의미는 형제(동생)을 데려오는것.*/
+    display: flex !important; /*가로, 세로 레이아웃 정하는 언어. float는 가로 레이아웃을 정하는것. float있으면 flex가 안 먹힘.*/
+    
+    flex-direction: column; /* 세로로 정렬하겠다. */
+    justify-content: center; /* 세로가 justify축이 된다.*/
+    align-items: center; /* 가로정렬 스타일 */
+    
+    position: fixed; /*레이아웃의 기준. 레이아웃 순위 1등*/
+    left: 0; right: 0; /*기준 설정과 동시에 width는 자동으로 100%가 됨. */
+    top: 3rem; bottom: 0; /*화면 한 가득 담길 수 있음.*/
+    background: black;
+
+    line-height: 2;
+
+}
+
+.xi-close + ul li{
+    width: 100%;
+}
+
+#gnb a{color: white !important;}
